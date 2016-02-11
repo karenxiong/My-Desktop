@@ -1,0 +1,53 @@
+body {
+	background-color: #fcc3df;
+	font-family: "Open Sans";
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+#nav {
+	display: table;
+	width: 100%;
+	margin: 0px;
+	padding: 5px;
+	background-color: #e0e0e0;
+}
+
+ul {
+	width: 1000px;
+	list-style-type: none;
+	margin: 0;
+}
+
+.onclick-nav:focus {
+	pointer-events: none;
+}
+
+.onclick-nav:focus .onclick-nav2 {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.onclick-nav2 {
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	/*visibility: hidden;*/
+	transition: visibility 0.5s;
+}
+
+ul li {
+	display: table-cell;
+	margin: 0px;
+	float: left;
+	font-size: 12px;
+	font-weight: 600;
+	width: 8.3333333333%;
+	text-align: center;
+	white-space: nowrap;
+}
