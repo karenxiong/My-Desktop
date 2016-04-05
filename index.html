@@ -14,60 +14,89 @@
 		<!-- navbar -->
 		<div id="nav">
 			<ul>
-				<li>My Desktop</li>
-				<li tabindex="0" class="onclick-nav">File</li>
-					<ul class="onclick-nav2">
-						<li>Name</li>2
-						<li>Name</li>
-						<li>Name</li>
-						<li>Name</li>
-					</ul>
-				<li tabindex="0" class="onclick-nav">Edit</li>
-					<ul class="onclick-nav2">
+				<li class="icon"><img src="img/icon2.png" align="top"></li>
+				<li onclick="dropmenu()" class="dropmenu">File</li>
+					<ul id="droplist" class="dropcontent">
 						<li>Name</li>
 						<li>Name</li>
 						<li>Name</li>
 						<li>Name</li>
 					</ul>
-				<li tabindex="0" class="onclick-nav">View</li>
-					<ul class="onclick-nav2">
-						<li>Name</li>
-						<li>Name</li>
-						<li>Name</li>
-						<li>Name</li>
+				<li tabindex="0" class="left">Edit</li>
+					<ul id="droplist" class="dropcontent">
+						<a href="#">
+							<li>Name</li>
+						</a>
+						<a href="#">
+							<li>Name</li>
+						</a>
+						<a href="#">
+							<li>Name</li>
+						</a>
+						<a href="#">
+							<li>Name</li>
+						</a>
 					</ul>
-				<li tabindex="0" class="onclick-nav">Go</li>
-					<ul class="onclick-nav2">
-						<li>Name</li>
-						<li>Name</li>
-						<li>Name</li>
-						<li>Name</li>
+				<li tabindex="0" class="left">View</li>
+					<ul id="droplist" class="dropcontent">
+						<a href="#">
+							<li>Name</li>
+						</a>
+						<a href="#">
+							<li>Name</li>
+						</a>
+						<a href="#">
+							<li>Name</li>
+						</a>
+						<a href="#">
+							<li>Name</li>
+						</a>
+					</ul>
+				<li tabindex="0" class="left">Go</li>
+					<ul id="droplist" class="dropcontent">
+						<a href="#">
+							<li>Name</li>
+						</a>
+						<a href="#">
+							<li>Name</li>
+						</a>
+						<a href="#">
+							<li>Name</li>
+						</a>
+						<a href="#">
+							<li>Name</li>
+						</a>
 					</ul>
 				<li>Help</li>
+				<li class="time">
+					<p>Sat Apr 2 &nbsp; 6:44 PM</p>
+				</li>
 			</ul>
 		</div>
 		<div class="apps">
 			<div class="enternet">
 				<a href="#">
-					<img src="img/Enternet.png" alt="Enternet">
+					<img src="img/enternet.png" alt="Enternet">
 				</a>
-				<p>Enternet</p>
+				<span class="title">Enternet</span>
+			</div>
 			<div class="snake">
 				<a href="#">
 					<img src="img/snake.png" alt="Snake">
 				</a>
-				<p>Snake</p>
+				<span class="title">Snake</span>
+			</div>
 			<div class="music">
 				<a href="#">
 					<img src="img/music.png" alt="Music">
 				</a>
-				<p>Music</p>
-			<div class="messenger">
-				<a href="#">
-					<img src="img/messenger.png" alt="Messenger">
-				</a>
-				<p>Messenger</p>
+				<span class="title">Music</span>
 			</div>
+			<div class="message">
+				<a href="#">
+					<img src="img/message.png" alt="Messenger">
+				</a>
+				<span class="title">Messenger</span>
 			</div>
 		</div>
 	</body>
