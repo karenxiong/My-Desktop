@@ -8,6 +8,7 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/moment.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/default.css"/>
 	</head>
 	<body class="home">
@@ -15,7 +16,7 @@
 		<div id="nav">
 			<ul>
 				<li class="icon"><img src="img/icon2.png" align="top"></li>
-				<li onclick="dropmenu()" class="dropmenu">File</li>
+				<li onclick="myFunction()" class="dropmenu">File</li>
 					<ul id="droplist" class="dropcontent">
 						<li>Name</li>
 						<li>Name</li>
@@ -68,9 +69,7 @@
 						</a>
 					</ul>
 				<li>Help</li>
-				<li class="time">
-					<p>Sat Apr 2 &nbsp; 6:44 PM</p>
-				</li>
+				<li id="time"></li>
 			</ul>
 		</div>
 		<div class="apps">
@@ -99,5 +98,6 @@
 				<span class="title">Messenger</span>
 			</div>
 		</div>
+		<p id="time"></p>
 	</body>
 </html>

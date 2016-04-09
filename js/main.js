@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  function dropmenu() {
+  function myFunction() {
       document.getElementById("droplist").classList.toggle("show");
   }
 
@@ -17,4 +17,13 @@ $(document).ready(function(){
       }
     }
   }
-}
+
+  function updateTime() {
+    var today = moment().format('ddd MMM D, h:mm A');
+    document.getElementById("time").innerHTML = today;
+  };
+  updateTime();
+  setInterval(function(){
+    updateTime();
+  },1000);  
+});

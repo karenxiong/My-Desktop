@@ -16,8 +16,14 @@
 
 .welcome {
 	background-color: #eaeaea;
-
+	font-size: 10px;
 }
+
+.welcome img {
+	width: 8%;
+	height: 8%;
+}
+
 
 a {
 	text-decoration: none;
@@ -61,9 +67,9 @@ ul li {
 	margin-left: -20px;
 }
 
-.time {
+#time {
 	float: right;
-	margin-right: 20px;
+	margin-right: 30px;
 	width: 10%;
 }
 
