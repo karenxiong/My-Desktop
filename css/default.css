@@ -1,3 +1,4 @@
+/* Body style */
 * {
 	height: auto;
 	width: auto;
@@ -6,28 +7,22 @@
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 	font-family: "Helvetica Neue";
 }
+
+/* Index styling */
 .home {
 	background-color: #efb1d0;
-
 }
 
-.welcome {
-	background-color: #eaeaea;
-	font-size: 10px;
-}
-
-.welcome img {
-	width: 8%;
-	height: 8%;
-}
-
+/* Link styling */
 
 a {
 	text-decoration: none;
 }
+
+/* Navbar styling*/
 
 #nav {
 	display: table;
@@ -35,8 +30,6 @@ a {
 	margin: 0px;
 	padding: 5px;
 	background-color: #eaeaea;
-/*	position: relative;
-	display: inline-block;*/
 }
 
 #nav li {
@@ -67,10 +60,32 @@ ul li {
 	margin-left: -20px;
 }
 
+/* Time styling */
+
 #time {
 	float: right;
 	margin-right: 30px;
 	width: 10%;
+}
+
+/* button dropdown style */
+
+.dropbtn {
+	cursor: pointer;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+}
+
+.dropdown-content a {
+	display: block;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
 }
 
 .dropmenu {
@@ -82,8 +97,14 @@ ul li {
 }
 
 .dropcontent a {
-	display: none;
+	display: block;
+	display: inline-block;
 }
+
+.show {
+	display: block;
+}
+/* button dropdown style end */
 
 .icon img {
 	width: 20%;
@@ -122,14 +143,14 @@ div.apps {
 	padding-bottom: 35px;
 }
 
-.show {
-	display: block;
+/* Welcome page styling */
+
+.welcome {
+	background-color: #eaeaea;
+	font-size: 10px;
 }
 
-/*.snake {
-	position: absolute;
-	right: -145px;
-	top: 80px;
-	margin: 0;
-	padding: 0;*/
+.welcome img {
+	width: 8%;
+	height: 8%;
 }

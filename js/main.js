@@ -1,13 +1,13 @@
-$(document).ready(function(){
+
   function myFunction() {
-      document.getElementById("droplist").classList.toggle("show");
+      document.getElementById("myDropdown").classList.toggle("show");
   }
 
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
-    if (!event.target.matches('.dropmenu')) {
+    if (!event.target.matches('.dropbtn')) {
 
-      var dropdowns = document.getElementsByClassName("dropcontent");
+      var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
@@ -18,6 +18,9 @@ $(document).ready(function(){
     }
   }
 
+$(document).ready(function(){
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
   function updateTime() {
     var today = moment().format('ddd MMM D, h:mm A');
     document.getElementById("time").innerHTML = today;
