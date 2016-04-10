@@ -167,7 +167,7 @@ div.apps {
 /* Enternet styling */
 
 .etop {
-	background-color: #eaeaea;
+	background-color: #dddddd;
 	padding-top: 10px;
 	padding-left: 12px;
 	padding-bottom: 10px;
@@ -181,6 +181,7 @@ div.apps {
     overflow:hidden;
     background: #ff471a;
     float: left;
+    border: solid 1px #bfbfbf;
 }
 
 .minimize {
@@ -192,6 +193,7 @@ div.apps {
 	background: #ffd480;
 	margin-left: 10px;
 	float: left;
+	border: solid 1px #bfbfbf;
 }
 
 .maximize {
@@ -203,23 +205,58 @@ div.apps {
 	background: #47d147;
 	margin-left: 10px;
 	float: left;
+	border: solid 1px #bfbfbf;
 }
 
+.enternetHead {
+	background-color: #eaeaea;
+	margin-left: 5px;
+}
+
+.forbackwards {
+	width: 4%;
+	padding-bottom: 3px;
+}
 
 .url {
-	background-color: white;
-	padding-left: 100px;
+	background: linear-gradient(to right,  #eaeaea 0%, #eaeaea 2%, #f6f6f6 2%, #f6f6f6 80%, #eaeaea 80%, #eaeaea 150%);
+	padding-left: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	width: 600px;
+	display: inline-block;
+}
+
+.option {
+	width: 4.5%;
+	padding-bottom: 3px;
+	float: right;
+	margin-right: 5px;
+	display: inline-block;
 }
 
 .facelook {
 	background-color: #003cb3;
+	padding: 5px;
+}
+
+.search {
+	width: 480px;
+	background-color: white;
+	display: inline-block;
+	color: grey;
+	padding: 5px;
+	margin-left: 36px;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 3px;
 }
 
 .facelook h2 {
+	margin-top: 3px;
 	color: white;
-	margin-left: 25px;
+	margin-left: 20px;
+	float: left;
 }
 
 /* Facelook styling */
@@ -233,7 +270,7 @@ div.apps {
 
 .enternetBody {
 	overflow-y: scroll;
-	height: 300px;
+	height: 500px;
 }
 
 .face {
@@ -246,14 +283,30 @@ div.apps {
 	margin-bottom: 40px;
 }
 
+.name {
+	color: #003cb3;
+	margin-bottom: 10px;
+}
+
+.pic {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 .text {
+	margin-top: 15px;
 	margin: bottom: 10px;
 	padding-left: 20px;
 	display: inline-block;
 	background-color: white;
 	padding: 20px;
 	margin-left: 15px;
-	width: 500px;
+	width: 510px;
+	vertical-align: top;
+}
+
+.hashtag {
+	color: #003cb3;
 }
 
 
