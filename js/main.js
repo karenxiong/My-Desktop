@@ -10,6 +10,7 @@ $(document).ready(function(){
   $(".dropbtn").click(function() {
     $(".dropdown-content").hide(); // hide all other menus first
     $(this).children(".dropdown-content").show();
+    $(this).toggleClass('active');
   });
 
   /* When the user clicks on the button, 
