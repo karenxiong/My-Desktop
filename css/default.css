@@ -28,7 +28,7 @@ a {
 	display: table;
 	width: 100%;
 	margin: 0px;
-	padding: 5px;
+	padding: 6px;
 	background-color: #eaeaea;
 }
 
@@ -96,7 +96,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    margin-top:4px;
+    margin-top: 6px;
     margin-left:15px;
     background-color: #eaeaea;
     min-width: 110px;
@@ -130,7 +130,7 @@ li.dropdown {
 	margin: 0;
 	display: inline-block;
 	overflow: hidden;
-	margin-top: -4px;
+	margin-top: -3px;
 	margin-left: 28px;
 }
 
@@ -219,7 +219,7 @@ div.apps {
 }
 
 .etitle {
-	padding-left: 37%;
+	padding-left: 36%;
 	font-weight: 400;
 }
 
