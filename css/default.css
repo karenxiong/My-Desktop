@@ -376,11 +376,39 @@ div.apps {
 /* Welcome page styling */
 
 .welcome {
-	background-color: #eaeaea;
-	font-size: 10px;
+	background-color: white;
+	font-size: 8px;
+	color: grey;
+	text-align: center;
+}
+
+.welcome h1 {
+	font-weight: 500;
 }
 
 .welcome img {
-	width: 8%;
-	height: 8%;
+	width: 35%;
+	height: 35%;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+
+.password {
+	background-color: white;
+	border-radius: 3%;
+	color: #dddddd;
+	width: 170px;
+	height: 10px;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: left;
+	font-size: 12px;
+}
+
+.wcontainer {
+	border-radius: 2%;
+	margin-top: 10%;
+	background-color: #eaeaea;
+	width: 300px;
+	height: 300px;
 }
