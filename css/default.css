@@ -108,6 +108,7 @@ li.dropdown {
     text-decoration: none;
     display: block;
     text-align: left;
+    cursor: default;
 }
 
 .dropdown-content a:hover {
@@ -166,11 +167,20 @@ div.apps {
 
 /* Enternet styling */
 
+#enternet {
+	position: absolute;
+}
+
 .etop {
 	background-color: #dddddd;
 	padding-top: 10px;
 	padding-left: 12px;
 	padding-bottom: 10px;
+}
+
+.buttons {
+	display: inline;
+
 }
 
 .close {
@@ -208,6 +218,11 @@ div.apps {
 	border: solid 1px #bfbfbf;
 }
 
+.etitle {
+	padding-left: 37%;
+	font-weight: 400;
+}
+
 .enternetHead {
 	background-color: #eaeaea;
 	margin-left: 5px;
@@ -219,7 +234,7 @@ div.apps {
 }
 
 .url {
-	background: linear-gradient(to right,  #eaeaea 0%, #eaeaea 2%, #f6f6f6 2%, #f6f6f6 80%, #eaeaea 80%, #eaeaea 150%);
+	background: linear-gradient(to right,  #eaeaea 0%, #eaeaea 2%, #f6f6f6 2%, #f6f6f6 86%, #eaeaea 86%, #eaeaea 150%);
 	padding-left: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -241,7 +256,7 @@ div.apps {
 }
 
 .search {
-	width: 480px;
+	width: 520px;
 	background-color: white;
 	display: inline-block;
 	color: grey;
@@ -266,6 +281,7 @@ div.apps {
 	margin-left: 20px;
 	width: 830px;
 	background-color: #e6e6e6;
+	display: none;
 }
 
 .enternetBody {
@@ -276,7 +292,7 @@ div.apps {
 .face {
 	margin-top: 20px;
 	width: 8%;
-	padding-left: 20px;
+	padding-left: 60px;
 }
 
 .santa {
@@ -307,6 +323,53 @@ div.apps {
 
 .hashtag {
 	color: #003cb3;
+}
+
+/* Snake app styling */
+
+#container {
+	display: inline-block;
+}
+
+#snake {
+	visibility: hidden;
+}
+
+.sTop {
+	background-color: #dddddd;
+	margin-top: 38px;
+	padding-top: 10px;
+	margin-left: 482px;
+	padding-left: 12px;
+	padding-bottom: 10px;
+
+}
+
+.sclose {
+	width: 2.9%;
+	height:0;
+	padding-bottom: 2.9%;
+    border-radius: 50%;
+    overflow:hidden;
+    background: #ff471a;
+    float: left;
+    border: solid 1px #bfbfbf;
+}
+
+.sminimize {
+	width: 2.9%;
+	height:0;
+	padding-bottom: 2.9%;
+    border-radius: 50%;
+    overflow:hidden;
+	background: #ffd480;
+	margin-left: 10px;
+	float: left;
+	border: solid 1px #bfbfbf;
+}
+
+#canvas {
+	margin-left: 482px;
 }
 
 

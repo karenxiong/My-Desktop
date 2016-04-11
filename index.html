@@ -7,8 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src"js/draggable.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/moment.js"></script>
+		<script src="js/snake.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/default.css"/>
 	</head>
 	<body class="home">
@@ -60,27 +62,19 @@
 		<!-- Apps -->
 		<div class="apps">
 			<div class="enternet">
-				<a href="#">
 					<img src="img/enternet.png" alt="Enternet">
-				</a>
 				<span class="title">Enternet</span>
 			</div>
 			<div class="snake">
-				<a href="#">
 					<img src="img/snake.png" alt="Snake">
-				</a>
 				<span class="title">Snake</span>
 			</div>
 			<div class="music">
-				<a href="#">
 					<img src="img/music.png" alt="Music">
-				</a>
 				<span class="title">Music</span>
 			</div>
 			<div class="message">
-				<a href="#">
 					<img src="img/message.png" alt="Messenger">
-				</a>
 				<span class="title">Messenger</span>
 			</div>
 		</div>
@@ -88,19 +82,14 @@
 		<div id="enternet">
 			<div class="etop">
 				<div class="buttons">
-					<a href="#">
-						<div class="close">
-						</div>
-					</a>
-					<a href="#">
-						<div class="minimize">
-						</div>
-					</a>
-					<a href="#">
-						<div class="maximize">
-						</div>
-					</a>
+					<div class="close">
+					</div>
+					<div class="minimize">
+					</div>
+					<div class="maximize">
+					</div>
 				</div>
+				<h4 class="etitle">Enternet</h4>
 			</div>
 			<div class="enternetHead">
 				<img class="forbackwards" src="img/leftarrow1.png">
@@ -126,6 +115,7 @@
 						<h4 class="name">Andy Lau</h4>
 						<img class="pic" src="img/winter.png">
 						<p>Is this supposed to be spring?! <span class="hashtag">#CanadianWeather</span></p>
+					</div>
 				</div>
 				<div class="girl">
 					<img class="face" src="img/girl.png">
@@ -138,7 +128,7 @@
 					<img class="face" src="img/boy.png">
 					<div class="text">
 						<h4 class="name">Jacob Grey</h4>
-						<p>Just had a great lunch with my best friend Annie! Unlike other girls, She really gets me. <span class="hashtag">#BestFriendsForever #Sister</span></p>
+						<p>Just had a great lunch with my best friend Annie! Unlike other girls, she really gets me. <span class="hashtag">#BestFriendsForever #Sister</span></p>
 					</div>
 				</div>
 				<div class="santa">
@@ -148,6 +138,21 @@
 						<p>Enjoying the cold weather. I love snow! <span class="hashtag">#Winter #Happy</span></p>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div id="snake">
+				<div class="sTop">
+					<div class="buttons">
+						<div class="sclose">
+						</div>
+						<div class="sminimize">
+						</div>
+						<div class="smaximize">
+						</div>
+					</div>
+				</div>
+				<canvas id="canvas" width="500" height="500"></canvas>
 			</div>
 		</div>
 	</body>
