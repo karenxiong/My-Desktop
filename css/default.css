@@ -161,6 +161,7 @@ div.apps {
 	width: 61%;
 	vertical-align: middle;
 	padding-bottom: 35px;
+	cursor: default;
 }
 
 /* Apps styling */
@@ -169,9 +170,14 @@ div.apps {
 
 #enternet {
 	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 830px;
+	background-color: #e6e6e6;
+	display: none;
 }
 
-.etop {
+#enternet .top {
 	background-color: #dddddd;
 	padding-top: 10px;
 	padding-left: 12px;
@@ -277,16 +283,13 @@ div.apps {
 /* Facelook styling */
 
 #enternet {
-	margin-top: 20px;
-	margin-left: 20px;
-	width: 830px;
-	background-color: #e6e6e6;
-	display: none;
+
 }
 
 .enternetBody {
 	overflow-y: scroll;
 	height: 500px;
+	margin-top: 10px;
 }
 
 .face {
@@ -325,17 +328,16 @@ div.apps {
 	color: #003cb3;
 }
 
-/* Snake app styling */
+/* ----------------Snake app styling ----------------*/
 
-#container {
-	display: inline-block;
-}
 
 #snake {
 	visibility: hidden;
+	position: absolute;
+	display: inline-block;
 }
 
-.sTop {
+#snake .top {
 	background-color: #dddddd;
 	margin-top: 38px;
 	padding-top: 10px;
@@ -372,6 +374,124 @@ div.apps {
 	margin-left: 482px;
 }
 
+/* Music app */
+
+/* Messenger app */
+
+#messenger {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 350px;
+	background-color: #e6e6e6;
+	display: none;
+}
+
+#messenger .top {
+	background-color: #dddddd;
+	padding-top: 10px;
+	padding-left: 12px;
+	padding-bottom: 10px;
+}
+
+.mclose {
+	width: 3.5%;
+	height:0;
+	padding-bottom: 3.5%;
+    border-radius: 50%;
+    overflow:hidden;
+    background: #ff471a;
+    float: left;
+    border: solid 1px #bfbfbf;
+}
+
+.mminimize {
+	width: 3.5%;
+	height:0;
+	padding-bottom: 3.5%;
+    border-radius: 50%;
+    overflow:hidden;
+	background: #ffd480;
+	margin-left: 10px;
+	float: left;
+	border: solid 1px #bfbfbf;
+}
+
+/*.mmaximize {
+	width: 1.8%;
+	height:0;
+	padding-bottom: 1.8%;
+    border-radius: 50%;
+    overflow:hidden;
+	background: #47d147;
+	margin-left: 10px;
+	float: left;
+	border: solid 1px #bfbfbf;
+}*/
+
+.mtitle {
+	padding-left: 25%;
+	font-weight: 400;
+}
+
+.ccontent {
+}
+
+.own {
+	margin-bottom: 10px;
+	font-weight: 200;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.own h4 {
+	font-weight: 400;
+}
+
+.ownpm {
+	font-size: 14px;
+}
+
+
+.contact {
+	height: 300px;
+	background-color: white;
+}
+
+.contact h4 {
+	font-weight: 500;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.online {
+	width: 350px;
+	margin-bottom: 10px;
+}
+
+.online h4 {
+	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.pm {
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 20px;
+}
+
+.user {
+	font-size: 15px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.offline h4 {
+	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
 
 /* Welcome page styling */
 
@@ -406,7 +526,7 @@ div.apps {
 }
 
 .wcontainer {
-	border-radius: 2%;
+	border-radius: 2.5%;
 	margin-top: 10%;
 	background-color: #eaeaea;
 	width: 300px;
