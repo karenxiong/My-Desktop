@@ -100,6 +100,7 @@ li.dropdown {
     margin-left:15px;
     background-color: #eaeaea;
     min-width: 110px;
+    z-index: 10;
 }
 
 .dropdown-content a {
@@ -189,9 +190,9 @@ div.apps {
 }
 
 .close {
-	width: 1.8%;
+	width: 15px;
 	height:0;
-	padding-bottom: 1.8%;
+	padding-bottom: 15px;
     border-radius: 50%;
     overflow:hidden;
     background: #ff471a;
@@ -200,9 +201,9 @@ div.apps {
 }
 
 .minimize {
-	width: 1.8%;
+	width: 15px;
 	height:0;
-	padding-bottom: 1.8%;
+	padding-bottom: 15px;
     border-radius: 50%;
     overflow:hidden;
 	background: #ffd480;
@@ -346,29 +347,6 @@ div.apps {
 
 }
 
-.sclose {
-	width: 2.9%;
-	height:0;
-	padding-bottom: 2.9%;
-    border-radius: 50%;
-    overflow:hidden;
-    background: #ff471a;
-    float: left;
-    border: solid 1px #bfbfbf;
-}
-
-.sminimize {
-	width: 2.9%;
-	height:0;
-	padding-bottom: 2.9%;
-    border-radius: 50%;
-    overflow:hidden;
-	background: #ffd480;
-	margin-left: 10px;
-	float: left;
-	border: solid 1px #bfbfbf;
-}
-
 #canvas {
 	margin-left: 482px;
 }
@@ -377,6 +355,17 @@ div.apps {
 
 /* ---------------- Messenger app ---------------- */
 
+.sender {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: green;
+}
+
+.receiver {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: blue;
+}
 #messenger {
 	position: absolute;
 	margin-top: 20px;
@@ -394,28 +383,6 @@ div.apps {
 	padding-bottom: 10px;
 }
 
-.mclose {
-	width: 3.5%;
-	height:0;
-	padding-bottom: 3.5%;
-    border-radius: 50%;
-    overflow:hidden;
-    background: #ff471a;
-    float: left;
-    border: solid 1px #bfbfbf;
-}
-
-.mminimize {
-	width: 3.5%;
-	height:0;
-	padding-bottom: 3.5%;
-    border-radius: 50%;
-    overflow:hidden;
-	background: #ffd480;
-	margin-left: 10px;
-	float: left;
-	border: solid 1px #bfbfbf;
-}
 
 .mtitle {
 	padding-left: 25%;
@@ -449,7 +416,7 @@ div.apps {
 }
 
 input {
-	margin-left: 10px;
+	margin-left: 28px;
 	margin-top: 5px;
 	width: 200px;
 	background-color: #e6e6e6;
@@ -506,43 +473,21 @@ input {
 
 /* ---------------- Annie Chat ---------------- */
 
-#Annie {
+#annie {
 	position: absolute;
 	margin-top: 20px;
 	margin-left: 500px;
 	width: 550px;
 	background-color: #e6e6e6;
 	cursor: default;
+	display: none;
 }
 
-#Annie .top {
+#annie .top {
 	background-color: #dddddd;
 	padding-top: 10px;
 	padding-left: 12px;
 	padding-bottom: 10px;
-}
-
-.mclose {
-	width: 2.8%;
-	height:0;
-	padding-bottom: 2.8%;
-    border-radius: 50%;
-    overflow:hidden;
-    background: #ff471a;
-    float: left;
-    border: solid 1px #bfbfbf;
-}
-
-.mminimize {
-	width: 2.8%;
-	height:0;
-	padding-bottom: 2.8%;
-    border-radius: 50%;
-    overflow:hidden;
-	background: #ffd480;
-	margin-left: 10px;
-	float: left;
-	border: solid 1px #bfbfbf;
 }
 
 .atitle {
@@ -554,7 +499,7 @@ input {
 	height: 360px;
 }
 
-.annie {
+img.annie {
 	width: 15%;
 	float: left;
 	padding-left: 10px;
@@ -573,54 +518,37 @@ input {
 	width: 400px;
 	height: 200px;
 	margin-top: 13px;
+	overflow-y: scroll;
 }
 
 .enter {
 	background-color: white;
 	height: 110px;
 	width: 400px;
-	margin-top: 10px;
+	/*margin-top: 10px;*/
+   	padding-left:0;
+    padding-top:0;
+    padding-bottom:0.4em;
+    padding-right: 0.4em;
 }
 
 /* ---------------- Jacob Chat ---------------- */
 
-#Jacob {
+#jacob {
 	position: absolute;
-	margin-top: 20px;
-	margin-left: 500px;
+	margin-top: 40px;
+	margin-left: 550px;
 	width: 550px;
 	background-color: #e6e6e6;
 	cursor: default;
+	display: none;
 }
 
-#Jacob .top {
+#jacob .top {
 	background-color: #dddddd;
 	padding-top: 10px;
 	padding-left: 12px;
 	padding-bottom: 10px;
-}
-
-.mclose {
-	width: 2.8%;
-	height:0;
-	padding-bottom: 2.8%;
-    border-radius: 50%;
-    overflow:hidden;
-    background: #ff471a;
-    float: left;
-    border: solid 1px #bfbfbf;
-}
-
-.mminimize {
-	width: 2.8%;
-	height:0;
-	padding-bottom: 2.8%;
-    border-radius: 50%;
-    overflow:hidden;
-	background: #ffd480;
-	margin-left: 10px;
-	float: left;
-	border: solid 1px #bfbfbf;
 }
 
 .jtitle {
@@ -632,7 +560,7 @@ input {
 	height: 360px;
 }
 
-.jacob {
+img.jacob {
 	width: 15%;
 	float: left;
 	padding-left: 10px;
@@ -660,8 +588,117 @@ input {
 	margin-top: 10px;
 }
 
+/* ---------------- Andy Chat ---------------- */
 
+#andy {
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 600px;
+	width: 550px;
+	background-color: #e6e6e6;
+	cursor: default;
+	display: none;
+}
 
+#andy .top {
+	background-color: #dddddd;
+	padding-top: 10px;
+	padding-left: 12px;
+	padding-bottom: 10px;
+}
+
+.antitle {
+	padding-left: 38%;
+	font-weight: 400;
+}
+
+.body {
+	height: 360px;
+}
+
+img.andy {
+	width: 15%;
+	float: left;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.msnkaren {
+	width: 15%;
+	padding-left: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.convo {
+	background-color: white;
+	width: 400px;
+	height: 200px;
+	margin-top: 13px;
+}
+
+.enter {
+	background-color: white;
+	height: 110px;
+	width: 400px;
+	margin-top: 10px;
+}
+
+/* ---------------- Howard Chat ---------------- */
+
+#howard {
+	position: absolute;
+	margin-top: 80px;
+	margin-left: 650px;
+	width: 550px;
+	background-color: #e6e6e6;
+	cursor: default;
+	display: none;
+}
+
+#howard .top {
+	background-color: #dddddd;
+	padding-top: 10px;
+	padding-left: 12px;
+	padding-bottom: 10px;
+}
+
+.htitle {
+	padding-left: 38%;
+	font-weight: 400;
+}
+
+.body {
+	height: 360px;
+}
+
+img.howard {
+	width: 15%;
+	float: left;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.msnkaren {
+	width: 15%;
+	padding-left: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.convo {
+	background-color: white;
+	width: 400px;
+	height: 200px;
+	margin-top: 13px;
+}
+
+.enter {
+	background-color: white;
+	height: 110px;
+	width: 400px;
+	margin-top: 10px;
+}
 
 /* ---------------- Welcome page styling ---------------- */
 
