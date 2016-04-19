@@ -443,9 +443,6 @@ input.personal-msg {
 	color: black;
 }
 
-input.login {
-	background-color: white;
-}
 .send {
 	background-color: white;
 	height: 110px;
@@ -676,6 +673,24 @@ img.howard {
 	text-align: center;
 }
 
+input.login {
+	margin-top: 5px;
+	background-color: white;
+	width: 170px;
+	font-size: 14px;
+	padding: 2px;
+}
+
+.pwmsg {
+	margin-top: 20px;
+	font-size: 12px;
+	color: #a6a6a6;
+}
+
+.pword {
+	font-size: 14px;
+}
+
 .welcome h1 {
 	font-weight: 500;
 }
@@ -685,18 +700,6 @@ img.howard {
 	height: 35%;
 	margin-top: 40px;
 	margin-bottom: 15px;
-}
-
-.password {
-	background-color: white;
-	border-radius: 3%;
-	color: #dddddd;
-	width: 170px;
-	height: 10px;
-	padding: 10px;
-	margin-top: 20px;
-	text-align: left;
-	font-size: 12px;
 }
 
 .wcontainer {

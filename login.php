@@ -3,14 +3,14 @@ session_start();
 session_regenerate_id(FALSE);
 session_unset();
 $pass = $_POST['pass'];
-$result = "Please enter your password";
+$result = "<div class='pwmsg'>Please enter your password</div>";
 if(isset($pass)) {
   if( $pass == "xiong" ) {
     $url = "/index.php";
     $_SESSION['auth'] = 1;
     header("Location: $url");
   } else {
-      $result='<div>Wrong password. Please re-enter your password.</div>';
+      $result="<div class='pwmsg'>Incorrect password. Please try again.</div>";
   }
 }
 ?>
@@ -32,8 +32,8 @@ if(isset($pass)) {
       <!--  <img src="img/iconw.png" alt="Icon"> -->
       <img src="img/chloe.png" alt="Dog Picture">
       <h1>Karen Xiong</h1><br>
-      <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        Password: <input class="login" type="password" name="pass">
+      <form class="pword" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+      <input class="login" type="password" name="pass" placeholder="Password">
       </form>
       <?php echo $result; ?>
     </div>
