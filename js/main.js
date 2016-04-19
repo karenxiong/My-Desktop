@@ -1,9 +1,14 @@
-  // Close any open dropdown menu, when user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      $(".dropdown-content").hide();
-    }
+// allow drag and drop on tags with windows class
+$(function() {
+  $(".window").draggable();
+});
+
+// Close any open dropdown menu, when user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    $(".dropdown-content").hide();
   }
+}
 
 $(document).ready(function(){
   var maxIndex = 0; // used to decide which window overlaps another
@@ -87,6 +92,12 @@ $(document).ready(function(){
   });
 
   /* ---------------- general window / desktop behaviors ---------------- */
+  // when window is clicked, it will appear on top of all other windows
+  $(".window").click(function() {
+    maxIndex += 1;
+    $(this).css("z-index", maxIndex);
+  });
+
   // close and window minimize buttons
   $(".close, .minimize").click(function() {
     if ($(this).closest(".window").css("id") == "snake") {
@@ -101,12 +112,6 @@ $(document).ready(function(){
     $(".dropdown-content").hide(); // hide all other menus first
     $(this).children(".dropdown-content").show();
   });
-
-  // $(function() {
-  //   $(".etop").draggable();
-  // });
-
-
 
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */

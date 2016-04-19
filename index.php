@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+// session_regenerate_id(FALSE);
+// session_unset();
+if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
+	header("Location: /login.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,10 +17,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script src"js/draggable.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/moment.js"></script>
 		<script src="js/snake.js"></script>
+		<!-- drag and drop js-->
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/default.css"/>
 	</head>
 	<body class="home">
@@ -23,7 +34,7 @@
 						<a href="#">Name</a>
 						<a href="#">Name</a>
 						<a href="#">Name</a>
-						<a href="welcome.html">Log Off</a>
+						<a href="login.php">Log Off</a>
 					</div>
 				</li>
 				<li class="dropbtn">Edit
@@ -157,6 +168,20 @@
 		</div>
 		<!-- Music app -->
 		<div class="window" id="music">
+			<div class="top">
+				<div class="buttons">
+					<div class="close">
+					</div>
+					<div class="minimize">
+					</div>
+				</div>
+				<h4 class="mutitle">Music Player</h4>
+			</div>
+			<audio id="audio" controls="controls">
+			  <source src="horse.ogg" type="audio/ogg">
+			  <source src="horse.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+			</audio>
 		</div>
 		<!-- Messenger app -->
 		<div class="window" id="messenger">
@@ -173,7 +198,7 @@
 				<div class="own">
 					<img src="img/chloe.png">
 					<h4>Karen</h4><br>
-					<input type="text" class="ownpm" placeholder="< Type a personal message >"onfocus="this.placeholder = ''" onblur="this.placeholder = '< Type a personal message >'"></input>
+					<input class="personal-msg" type="text" class="ownpm" placeholder="< Type a personal message >"onfocus="this.placeholder = ''" onblur="this.placeholder = '< Type a personal message >'"></input>
 				</div>
 				<div class="contact">
 					<div class="online">
