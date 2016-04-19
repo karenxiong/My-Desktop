@@ -48,11 +48,14 @@ $(document).ready(function(){
     if (receiver.match(/andy/i) || receiver.match("howard")) return ["", -1];
   }
 
-  $(".enter").keypress(function(e) {
+  $(".send").keypress(function(e) {
     if(e.which == 13) { // if enter key is pressed
+        // prevent default behavior
+        e.preventDefault();
+        
         // save and empty enter textbox
         var receiver = $(this).parent().parent().attr("id");
-        var msg = "Karen" + " @ " + $("#time").html().split(",")[1] + 
+        var msg = "<b>Karen</b>" + " @ " + $("#time").html().split(",")[1] + 
           ": " + $(this).val(); // format the msg with a time
         $(this).val(""); // erase text box
 
@@ -66,8 +69,9 @@ $(document).ready(function(){
         setTimeout(function() {
           // say a reply
           if (reply[0] != undefined && reply[0] != "") {
-            $convoWindow.append("<p class='receiver'>" + receiver.charAt(0).toUpperCase() + receiver.slice(1) + " @ " 
-              + $("#time").html().split(",")[1] + ": " + reply[0] + "</p>"); // show the reply
+            $convoWindow.append("<p class='receiver'>" + "<b>" + receiver.charAt(0).toUpperCase() 
+              + receiver.slice(1) + "</b>" + " @ " + $("#time").html().split(",")[1] + ": " + reply[0] 
+              + "</p>"); // show the reply
           }
           // check if the person doesnt have anything left to speak, puts em offline
           if (reply[0] != undefined && reply[1] == 0) {

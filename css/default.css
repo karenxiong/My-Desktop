@@ -416,12 +416,24 @@ div.apps {
 }
 
 input {
-	margin-left: 28px;
+	margin-left: 10px;
 	margin-top: 5px;
 	width: 200px;
 	background-color: #e6e6e6;
 	border: 0;
 	color: black;
+}
+
+.send {
+	background-color: white;
+	height: 110px;
+	width: 390px;
+	margin-top: 10px;
+	margin-left: 23px;
+	font-size: 16px;
+	padding: 5px;
+	border: none;
+	resize: none;
 }
 
 
@@ -502,13 +514,13 @@ input {
 img.annie {
 	width: 15%;
 	float: left;
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-top: 10px;
 }
 
-.msnkaren {
+img.msnkaren {
 	width: 15%;
-	padding-left: 10px;
+	padding-left: 20px;
 	margin-top: 10px;
 	float: left;
 }
@@ -525,11 +537,7 @@ img.annie {
 	background-color: white;
 	height: 110px;
 	width: 400px;
-	/*margin-top: 10px;*/
-   	padding-left:0;
-    padding-top:0;
-    padding-bottom:0.4em;
-    padding-right: 0.4em;
+	margin-top: 10px;
 }
 
 /* ---------------- Jacob Chat ---------------- */
@@ -563,29 +571,8 @@ img.annie {
 img.jacob {
 	width: 15%;
 	float: left;
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-top: 10px;
-}
-
-.msnkaren {
-	width: 15%;
-	padding-left: 10px;
-	margin-top: 10px;
-	float: left;
-}
-
-.convo {
-	background-color: white;
-	width: 400px;
-	height: 200px;
-	margin-top: 13px;
-}
-
-.enter {
-	background-color: white;
-	height: 110px;
-	width: 400px;
-	margin-top: 10px;
 }
 
 /* ---------------- Andy Chat ---------------- */
@@ -619,29 +606,8 @@ img.jacob {
 img.andy {
 	width: 15%;
 	float: left;
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-top: 10px;
-}
-
-.msnkaren {
-	width: 15%;
-	padding-left: 10px;
-	margin-top: 10px;
-	float: left;
-}
-
-.convo {
-	background-color: white;
-	width: 400px;
-	height: 200px;
-	margin-top: 13px;
-}
-
-.enter {
-	background-color: white;
-	height: 110px;
-	width: 400px;
-	margin-top: 10px;
 }
 
 /* ---------------- Howard Chat ---------------- */
@@ -675,29 +641,8 @@ img.andy {
 img.howard {
 	width: 15%;
 	float: left;
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-top: 10px;
-}
-
-.msnkaren {
-	width: 15%;
-	padding-left: 10px;
-	margin-top: 10px;
-	float: left;
-}
-
-.convo {
-	background-color: white;
-	width: 400px;
-	height: 200px;
-	margin-top: 13px;
-}
-
-.enter {
-	background-color: white;
-	height: 110px;
-	width: 400px;
-	margin-top: 10px;
 }
 
 /* ---------------- Welcome page styling ---------------- */
