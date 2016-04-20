@@ -212,6 +212,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
 			        </div>
 			    </div>
 			</div>
+		</div>
 		<!-- Messenger app -->
 		<div class="window" id="messenger">
 			<div class="top">

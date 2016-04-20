@@ -338,6 +338,7 @@ div.apps {
 
 #music {
 	width: 500px;
+	display: none;
 }
 
 #music .top {
@@ -489,6 +490,7 @@ input.personal-msg {
 	background-color: #e6e6e6;
 	border: 0;
 	color: black;
+	font-size: 14px;
 }
 
 .send {
