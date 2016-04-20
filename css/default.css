@@ -1,6 +1,6 @@
 /* ---------------- Body style ---------------- */
 * {
-	height: auto;
+/*	height: auto;*/
 	width: auto;
 	padding: 0;
 	margin: 0 auto;
@@ -37,13 +37,7 @@ a {
 	cursor: default;
 }
 
-ul {
-	width: 100%;
-	list-style-type: none;
-	margin: 0;
-}
-
-ul li {
+.icon, .dropbtn, #time{
 	display: table-cell;
 	margin: 0px;
 	float: left;
@@ -51,7 +45,6 @@ ul li {
 	font-weight: 400;
 	width: 8%;
 	text-align: center;
-	white-space: nowrap;
 	padding-top: -1px;
 	margin-bottom: -4px;
 }
@@ -70,7 +63,7 @@ ul li {
 
 /* ---------------- button dropdown style ---------------- */
 
-ul {
+.meno {
 	padding-top: -1px;
 	margin-bottom: -4px;
     list-style-type: none;
@@ -78,19 +71,11 @@ ul {
     background-color: #eaeaea;
 }
 
-li {
-    float: left;
-}
-
-li a, .dropbtn {
+a, .dropbtn {
     display: inline-block;
     color: black;
     text-align: center;
     text-decoration: none;
-}
-
-li.dropdown {
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -368,11 +353,74 @@ div.apps {
 	font-weight: 400;
 }
 
-audio {
-	margin-top: 30px;
-	width: 100%;
-	border-radius: none;
+.container { 
+	position:relative; 
+	margin:0 auto; 
+	width:500px; 
 }
+.column { 
+	width:inherit; 
+}
+
+audio, #plList, #plList li {
+	border:0;
+	font:inherit;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+	line-height:1;
+	padding:5px 0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-tap-highlight-color:transparent;
+}
+
+/*li .plSel {
+	width: 500px;
+}*/
+
+audio { margin:0 15px 0 14px; width:670px;}
+#mainwrap { /* add box-shadow or other styles here */ }
+#audiowrap { background-color:#231F20; margin:0 auto; }
+#plwrap { margin:0 auto; }
+#tracks { min-height:65px; position:relative; text-align:center; text-decoration:none; top:13px;}
+#nowPlay { /*display:inline;*/ width: 500px; padding-top: 10px; background-color: #231F20; padding-bottom: 10px;}
+#npTitle { margin:0; margin-top:5px; padding:21px; text-align:right; color: white; background-color:#231F20; width: 500px;}
+#npAction { padding:21px; position:absolute; color}
+#plList { margin:0; margin-top:-10px;}
+#plList li { background-color:#231F20; cursor:pointer; margin:0; padding:21px 0; }
+#plList li:hover { background-color:#262223; }
+.plItem { position:relative; }
+.plTitle { font-size:15px; left:20px; overflow:hidden; position:absolute; right:65px; text-overflow:ellipsis; top:0; white-space:nowrap; color: white;}
+.plNum { padding-left:21px; width:25px; }
+.plLength { padding-left:21px; position:absolute; right:21px; top:0; color: white;}
+.plSel,.plSel:hover { background-color:#262223!important; cursor:default!important; }
+a[id^="btn"] { background-color:#231F20; color:#C8C7C8; cursor:pointer; font-size:50px; margin:0; padding:0 27px 11px; text-decoration:none; }
+a[id^="btn"]:last-child { margin-left:-4px; }
+a[id^="btn"]:hover,a[id^="btn"]:active { background-color:#262223; }
+a[id^="btn"]::-moz-focus-inner { border:0; padding:0; }
+
+/* IE 11 */
+html[data-useragent*="rv:11.0"] audio { margin-left:2px; width:695px; }
+html[data-useragent*="rv:11.0"] #audiowrap { background-color:#000; }
+html[data-useragent*="rv:11.0"] #tracks { min-height:60px; top:8px; }
+html[data-useragent*="rv:11.0"] a[id^="btn"] { background-color:#000; }
+html[data-useragent*="rv:11.0"] a[id^="btn"]:hover { background-color:#080808; }
+html[data-useragent*="rv:11.0"] #plList li { background-color:#000; }
+html[data-useragent*="rv:11.0"] #plList li:hover { background-color:#080808; }
+html[data-useragent*="rv:11.0"] .plSel,
+html[data-useragent*="rv:11.0"] .plSel:hover { background-color:#080808!important; }
+
+/* Chrome */
+html[data-useragent*="Chrome"] audio { margin-left:6px; width:487px; }
+html[data-useragent*="Chrome"] #audiowrap { background-color:#141414; }
+html[data-useragent*="Chrome"] #tracks { min-height:64px; top:12px; }
+html[data-useragent*="Chrome"] a[id^="btn"] { background-color:#141414; }
+html[data-useragent*="Chrome"] a[id^="btn"]:hover { background-color:#171717; }
+html[data-useragent*="Chrome"] #plList li { background-color:#141414; }
+html[data-useragent*="Chrome"] #plList li:hover { background-color:#171717; }
+html[data-useragent*="Chrome"] .plSel,
+html[data-useragent*="Chrome"] .plSel:hover { background-color:#171717!important; }
 
 /* ---------------- Messenger app ---------------- */
 

@@ -20,6 +20,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
 		<script src="js/main.js"></script>
 		<script src="js/moment.js"></script>
 		<script src="js/snake.js"></script>
+		<script src="js/music.js"></script>
 		<!-- drag and drop js-->
 		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/default.css"/>
@@ -27,13 +28,10 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
 	<body class="home">
 		<!-- navbar -->
 		<div id="nav">
-			<ul>
+			<ul class="meno">
 				<li class="icon"><img src="img/icon2.png" align="top"></li>
 				<li class="dropbtn">File
 					<div class="dropdown-content">
-						<a href="#">Name</a>
-						<a href="#">Name</a>
-						<a href="#">Name</a>
 						<a href="login.php">Log Off</a>
 					</div>
 				</li>
@@ -96,8 +94,6 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
 					<div class="close">
 					</div>
 					<div class="minimize">
-					</div>
-					<div class="maximize">
 					</div>
 				</div>
 				<h4 class="etitle">Enternet</h4>
@@ -177,12 +173,45 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
 				</div>
 				<h4 class="mutitle">Music Player</h4>
 			</div>
-			<audio id="audio" controls="controls">
-			  <source src="horse.ogg" type="audio/ogg">
-			  <source src="horse.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-			</audio>
-		</div>
+			<div class="container">
+			    <div class="column add-bottom">
+			        <div id="mainwrap">
+			            <div id="nowPlay">
+			                <span class="right" id="npTitle"></span>
+			            </div>
+			            <div id="audiowrap">
+			                <div id="audio0">
+			                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+			                </div>
+			            </div>
+			            <div id="plwrap">
+			                <ul id="plList">
+			                    <li>
+			                        <div class="plItem">
+			                            <div class="plNum">-</div>
+			                            <div class="plTitle">01.&nbsp; Funky - Bensound</div>
+			                            <div class="plLength">03:09</div>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="plItem">
+			                            <div class="plNum">-</div>
+			                            <div class="plTitle">02.&nbsp; Tomorrow - Bensound</div>
+			                            <div class="plLength">04:55</div>
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="plItem">
+			                            <div class="plNum">-</div>
+			                            <div class="plTitle">03. &nbsp; Memories - Bensound</div>
+			                            <div class="plLength">03:50</div>
+			                        </div>
+			                    </li>
+			                </ul>
+			            </div>
+			        </div>
+			    </div>
+			</div>
 		<!-- Messenger app -->
 		<div class="window" id="messenger">
 			<div class="top">
