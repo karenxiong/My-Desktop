@@ -37,31 +37,18 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
 				</li>
 				<li class="dropbtn">Edit
 					<div class="dropdown-content">
-						<a href="#">Name</a>
-						<a href="#">Name</a>
-						<a href="#">Name</a>
-						<a href="#">Name</a>
 					</div>
 				</li>
 				<li class="dropbtn">View
 					<div class="dropdown-content">
-						<a href="#">Name</a>
-						<a href="#">Name</a>
-						<a href="#">Name</a>
-						<a href="#">Name</a>
 					</div>
 				</li>
 				<li class="dropbtn">Go				
 					<div class="dropdown-content">
-						<a href="#">Enternet</a>
-						<a href="#">Snake</a>
-						<a href="#">Music</a>
-						<a href="#">Messenger</a>
 					</div>
 				</li>
 				<li class="dropbtn">Help
 					<div class="dropdown-content">
-						<a href="#">About</a>
 					</div>
 				</li>
 				<!-- Time in navbar -->
@@ -158,7 +145,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
 					<div class="minimize">
 					</div>
 				</div>
-				<h4 class="etitle">Snake</h4>
+				<h4 class="stitle">Snake</h4>
 			</div>
 			<canvas id="canvas" width="500" height="500"></canvas>
 		</div>
@@ -228,7 +215,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
 				<div class="own">
 					<img src="img/chloe.png">
 					<h4>Karen</h4><br>
-					<input class="personal-msg" type="text" class="ownpm" placeholder="< Type a personal message >"onfocus="this.placeholder = ''" onblur="this.placeholder = '< Type a personal message >'"></input>
+					<input class="personal-msg" type="text" placeholder="< Type a personal message >"onfocus="this.placeholder = ''" onblur="this.placeholder = '< Type a personal message >'"></input>
 				</div>
 				<div class="contact">
 					<div class="online">
@@ -246,7 +233,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] != 1 ) {
 						<h4>Offine 2/4</h4>
 						<span class="andy">
 							<p class="user">Andy</p>
-							<p class="pm">Out shoveling the snow... If I'm not back by Sunday, send help..</p>
+							<p class="pm">Out shoveling the snow...</p>
 						</span>
 						<span class="howard">
 							<p class="user">Howard</p>
